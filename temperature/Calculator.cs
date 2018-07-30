@@ -3,15 +3,6 @@ using System;
 namespace temperature {
     public class TempCalculator {
 
-        #region สูตรการแปลงอุณหภูมิ
-        // °F = (1.8 × °C) + 32
-        // °F = °K × 1.8 − 459.67
-        // °C = °K - 273.15
-        // °C = (°F - 32) x 5/9
-        // °K = °C + 273.15          
-        // °K = (°F + 459.67) / (1.8)           
-        #endregion
-
         public double ConvertFahrenheitToCelsius (double fahrenheit) {
             double celsius = (fahrenheit -32) * 5/9.0;
             return celsius;
